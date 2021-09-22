@@ -1,0 +1,284 @@
+{%load static%}
+<!DOCTYPE HTML>
+<html lang="en">
+    
+
+<head>
+        <!--=============== basic  ===============-->
+        <meta charset="UTF-8">
+        <title>Almass Group Of Companies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <!--=============== css  ===============--> 
+       <link type="text/css" rel="stylesheet" href="{% static 'css/reset.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/plugins.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!--=============== favicons ===============-->
+        <link rel="shortcut icon" href="{% static 'images/logo.png' %}">
+    </head>
+    <body>
+        <!-- loader -->
+        <div class="loader">
+            <div id="movingBallG">
+                <div class="movingBallLineG"></div>
+                <div id="movingBallG_1" class="movingBallG"></div>
+            </div>
+        </div>
+        <!-- loader end -->
+        <!--================= main start ================-->
+        <div id="main">
+            <!--=============== header ===============-->	
+            <header>
+                <!-- header-inner  -->
+                <div class="header-inner">
+                    <!-- header logo -->
+                    <div class="logo-holder">
+                        <a href="{%url 'home'%}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                    </div>
+                    <!-- header logo end -->
+                    <!-- mobile nav button -->
+                    <div class="nav-button-holder">
+                        <div class="nav-button vis-m"><span></span><span></span><span></span></div>
+                    </div>
+                    <!-- mobile nav button end -->
+                    <!-- navigation  -->
+                   <div class="nav-holder">
+                        <nav >
+                            <ul>
+                                <li><a class="scroll-link" href="{%url 'home' %}"  data-bgtex="Home">Home</a></li>
+                                <li><a class="scroll-link" href="{%url 'about' %}"  data-bgtex="about us"><span>About</span></a></li>
+                                <li><a class="scroll-link" href="{%url 'gallery' %}"  data-bgtex="Featured works"><span>Works</span></a></li>
+                                
+                                <li><a class="scroll-link" href="{%url 'service' %}"  data-bgtex="Our services"><span>Services</span></a></li>
+                                <li><a class="scroll-link" href="{%url 'contact' %}"  data-bgtex="contacts"><span>Contacts</span></a></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- navigation  end -->
+                </div>
+                <!-- header-inner  end -->
+                <!-- share button  -->
+                <div class="show-share isShare">
+                    <span>Share</span>
+                    <i class="fa fa-chain-broken"></i>            
+                </div>
+                <!-- share  end-->
+            </header>
+            <!--=============== wrapper ===============-->	
+            <div id="wrapper">
+                <!-- content-holder  -->
+                <div class="content-holder">
+                    <!-- Page title -->
+                    <div class="dynamic-title">Horizontal Gallery</div>
+                    <!-- Page title  end--> 
+                    <!-- content  -->
+                    <div class="content hor-content full-height pad-con no-bg-con">
+                        <!-- portfolio  Images  -->
+                        <div class="control-panel">
+                            <div class="container">
+                                <div class="caption"></div>
+                                <a href="{%url 'contact' %}" class=" btn anim-button   flat-btn   transition"><span>Get in Touch</span><i class="fa fa-eye"></i></a>
+                                <span     class="show-thumbs vis-con-panel vis-t" data-textshow="Show thumbnails" data-texthide="Hide thumbnails"></span>
+                            </div>
+                        </div>
+                        <div class="resize-carousel-holder lightgallery ogm smp">
+                            <div id="gallery_horizontal" class="gallery_horizontal flow-gallery" data-cen="1">
+
+                                <div class="horizontal_item" data-phname="Villa's and Home's" data-phdesc="We are Specialiced in Residential Interior Designs">
+                                    <img src="{% static 'images/folio/thumbs/29.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/29.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <div class="horizontal_item" data-phname="Villa's and Home's" data-phdesc="We are Specialiced in Residential Interior Designs">
+                                    <img src="{% static 'images/folio/thumbs/20190401_165042.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/20190401_165042.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Restaurant Works" data-phdesc="We are Specialiced in Interior Designs">
+                                    <img src="{% static 'images/folio/thumbs/a001f190-38d5-4e24-a2de-8772802216dc_ABQ1pjz.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/a001f190-38d5-4e24-a2de-8772802216dc_ABQ1pjz.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Restaurant Works" data-phdesc="We are Specialiced in Interior Designs">
+                                    <img src="{% static 'images/folio/thumbs/PHOTO-2018-11-18-11-01-51_1_iT0hlts.jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/PHOTO-2018-11-18-11-01-51_1_iT0hlts.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Our Joinery Works" data-phdesc="Look Into our Joinery Works">
+                                    <img  src="{% static 'images/folio/thumbs/PHOTO-2018-05-15-19-30-05 (2).jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/PHOTO-2018-05-15-19-30-05 (2).jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Our Joinery Works" data-phdesc="Look Into our Joinery Works">
+                                    <img  src="{% static 'images/folio/thumbs/IMG-20190310-WA0111.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/IMG-20190310-WA0111.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Our Joinery Works" data-phdesc="Look Into our Joinery Works">
+                                    <img  src="{% static 'images/folio/thumbs/IMG-20191009-WA0059.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/IMG-20191009-WA0059.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                 <div class="horizontal_item" data-phname="Our Joinery Works" data-phdesc="Look Into our Joinery Works">
+                                    <img  src="{% static 'images/folio/thumbs/IMG-20190907-WA0040.jpg' %}"   alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/IMG-20190907-WA0040.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Kiosks" data-phdesc="We have a team who are Specialiced in Kiosks Interior">
+                                    <img  src="{% static 'images/folio/thumbs/WhatsApp Image 2020-02-06 at 11.40.49 AM.jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/WhatsApp Image 2020-02-06 at 11.40.49 AM.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                 <div class="horizontal_item" data-phname="Kiosks" data-phdesc="We have a team who are Specialiced in Kiosks Interior">
+                                    <img src="{% static 'images/folio/thumbs/WhatsApp Image 2020-02-20 at 10.29.16 AM.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/WhatsApp Image 2020-02-20 at 10.29.16 AM.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->                                 
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Medical Centers and Spa's" data-phdesc="We have done interior design for Medical Centers and Spa's">
+                                    <img  src="{% static 'images/folio/thumbs/FullSizeRender.jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/FullSizeRender.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Medical Centers and Spa's" data-phdesc="We have done interior design for Medical Centers and Spa's">
+                                    <img   src="{% static 'images/folio/thumbs/FullSizeRender (3).jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/FullSizeRender (3).jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Medical Centers and Spa's" data-phdesc="We have done interior design for Medical Centers and Spa's">
+                                    <img  src="{% static 'images/folio/thumbs/FullSizeRender (7).jpg' %}" alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/FullSizeRender (7).jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->
+                                <!-- gallery Item-->
+                                <div class="horizontal_item" data-phname="Office Works" data-phdesc="We have done interior design for Offices and Business Organisations">
+                                    <img   src="{% static 'images/folio/thumbs/LRM_EXPORT_43434402766977_20190907_092452275.jpeg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/LRM_EXPORT_43434402766977_20190907_092452275.jpeg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+
+                                <div class="horizontal_item" data-phname="Office Works" data-phdesc="We have done interior design for Offices and Business Organisations">
+                                    <img   src="{% static 'images/folio/thumbs/LRM_EXPORT_43532534563658_20190907_092630407.jpeg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/LRM_EXPORT_43532534563658_20190907_092630407.jpeg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+
+                                 <div class="horizontal_item" data-phname="Perfume Shops" data-phdesc="Other Interior Works">
+                                    <img   src="{% static 'images/folio/thumbs/IMG-20200628-WA0020 - Copy.jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/IMG-20200628-WA0020 - Copy.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+
+                                 <div class="horizontal_item" data-phname="Perfume Shops" data-phdesc="Other Interior Works">
+                                    <img   src="{% static 'images/folio/thumbs/e89ccaf1-a1ea-4866-82e5-a674081c15f0.jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/e89ccaf1-a1ea-4866-82e5-a674081c15f0.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+
+                                 <div class="horizontal_item" data-phname="Salons and Beauty Parlour" data-phdesc="Other Interior Works">
+                                    <img   src="{% static 'images/folio/thumbs/IMG-20200829-WA0028.jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/IMG-20200829-WA0028.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+
+                                 <div class="horizontal_item" data-phname="Medical Pharmacy" data-phdesc="Other Interior Works">
+                                    <img   src="{% static 'images/folio/thumbs/IMG-20200729-WA0032.jpg' %}"  alt="">
+                                    <a data-src="{% static 'images/folio/thumbs/IMG-20200729-WA0032.jpg' %}" class="popup-image slider-zoom">
+                                    <i class="fa fa-expand"></i> 
+                                    </a>
+                                </div>
+                                <!-- gallery item end-->                                
+                            </div>
+                            <!--  navigation -->
+                            <div class="customNavigation fhsln">
+                                <a class="prev-slide transition"><i class="fa fa-angle-left"></i></a>
+                                <a class="next-slide transition"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <!--  navigation end-->
+                        </div>
+                        <!-- portfolio  Images  end-->
+                        <!-- Hidden sidebar-->
+                        <div class="sb-overlay"></div>
+                       
+                        <!-- sidebar end -->
+                    </div>
+                    <!-- content end -->
+                    <!-- share  -->
+                    <div class="share-inner">
+                        <div class="share-container  isShare"  data-share="['facebook']"></div>
+                        <div class="close-share"></div>
+                    </div>
+                    <!-- share end -->
+                </div>
+                <!-- content-holder  end-->
+            </div>
+            <!-- wrapper end -->
+            <!-- Fixed footer -->
+            <footer class="fixed-footer">
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                        
+                        <li><a href="#" target="_blank" ><i class="fa fa-instagram"></i></a></li>
+                        
+                    </ul>
+                </div>
+                <!-- Header  title --> 
+                <div class="footer-title">
+                    <h2><a  href="#"></a></h2>
+                </div>
+                <!-- Header  title  end-->
+            </footer>
+            <!-- Fixed footer end-->
+        </div>
+        <!-- Main end -->
+        <!--=============== scripts  ===============-->
+        <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/plugins.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+    </body>
+
+
+</html>
